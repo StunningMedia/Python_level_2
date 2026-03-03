@@ -1,0 +1,10 @@
+{
+  "naam": "Pluisje",
+  "soort": "Kat",
+  "leeftijd": 3,
+  "favorieteVoeding": ["tonijn", "kip"],
+  "eigenaar": {
+    "naam": "Sara",
+    "leeftijd": 12
+  }
+}
