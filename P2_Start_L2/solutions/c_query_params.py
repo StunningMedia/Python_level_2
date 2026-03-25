@@ -10,7 +10,10 @@ naam = input("Geef jouw naam: ")
 # vorm het request met de correcte parameter, en houd het antwoord bij in variabele "response"
 response = requests.get(
     url="https://api.agify.io/",
-    params={"name": naam}
+    params={
+        "name": naam,
+        "country_id":"NL"
+    }
 )
 
 #  als de response code aangeeft dat het gelukt is   (  = 200 )

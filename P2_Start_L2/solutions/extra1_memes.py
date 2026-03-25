@@ -32,6 +32,7 @@ if response.status_code == 200:
     img_response = requests.get(image_url)
     #  als de status code van image_response aangeeft dat het gelukt is  ( = 200 )
     if img_response.status_code == 200:
+        print(img_response.content)
         # neem dan de INHOUD van img_response, maak daarmee een bytestream  ( functie 'BytesIO')
         #  en gebruikt die stream om te openen als afbeeling.  Houd de resulterende afbeelding bij in variabele "image"
         image = Image.open(BytesIO(img_response.content))
